@@ -3,7 +3,6 @@ const router = express.Router();
 const db = require('../../db/database');
 const inputCheck = require('../../utils/inputCheck');
 
-//***Candidates Routes***//
 // Get all candidates
 router.get('/candidates', (req, res) => {
   const sql = `SELECT candidates.*, parties.name 
